@@ -3,99 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Campo Laboral de ITS e IAS - FIME</title>
+  <title>Campo Laboral ITS e IAS - FIME</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Campo Laboral de ITS e IAS - FIME</h1>
     <nav>
-      <ul>
-        <li><a href="#descripcion">Descripción</a></li>
-        <li><a href="#mercado">Mercado Laboral</a></li>
-        <li><a href="#roles">Roles y Funciones</a></li>
-        <li><a href="#habilidades">Habilidades Clave</a></li>
-        <li><a href="#consideraciones">Consideraciones</a></li>
-      </ul>
+      <button onclick="mostrarSeccion('inicio')">Inicio</button>
+      <button onclick="mostrarSeccion('planes')">Planes de Estudio</button>
+      <button onclick="mostrarSeccion('areas')">Áreas de Conocimiento</button>
+      <button onclick="mostrarSeccion('mercado')">Mercado Laboral</button>
+      <button onclick="mostrarSeccion('salarios')">Salarios</button>
     </nav>
   </header>
 
   <main>
-    <section id="descripcion">
-      <h2>1. Descripción General de las Carreras</h2>
-      <article>
-        <h3>Ingeniería en Tecnologías de la Información (ITS)</h3>
-        <p>Formación enfocada en el desarrollo y gestión de sistemas informáticos, redes y bases de datos.</p>
-        <h3>Ingeniería en Automatización y Sistemas (IAS)</h3>
-        <p>Especialización en el diseño y control de sistemas automatizados y procesos industriales.</p>
-      </article>
+    <section id="inicio" class="seccion activa">
+      <h2>Inicio</h2>
+      <p>Breve introducción sobre la importancia y el alcance de ambas carreras en el contexto actual.</p>
     </section>
 
-    <section id="mercado">
-      <h2>2. Mercado Laboral Actual</h2>
-      <article>
-        <h3>Demanda en Guadalupe, Nuevo León</h3>
-        <p>Ambas carreras presentan alta demanda en sectores industriales y tecnológicos de la región.</p>
-        <h3>Salarios Promedio</h3>
-        <ul>
-          <li>ITS: $32,854 MXN mensuales.</li>
-          <li>IAS: $22,000 - $27,110 MXN mensuales.</li>
-        </ul>
-        <h3>Tendencias</h3>
-        <p>Crecimiento en áreas como Inteligencia Artificial y Ciberseguridad.</p>
-      </article>
+    <section id="planes" class="seccion">
+      <h2>Planes de Estudio</h2>
+      <div class="carrera">
+        <h3>🖥️ Ingeniería en Tecnologías de Software (ITS)</h3>
+        <p><strong>Duración:</strong> 10 semestres</p>
+        <p><strong>Enfoque:</strong> Desarrollo de software, sistemas distribuidos, inteligencia artificial, entre otros.</p>
+        <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Ing_TecnologiaSoftware-Plan-de-estudios.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
+      </div>
+      <div class="carrera">
+        <h3>📊 Ingeniería en Administración y Sistemas (IAS)</h3>
+        <p><strong>Duración:</strong> 10 semestres</p>
+        <p><strong>Enfoque:</strong> Administración de proyectos de software, análisis de sistemas, redes computacionales, entre otros.</p>
+        <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Ing_AdministradorSistemas-Plan-de-estudios.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
+      </div>
     </section>
 
-    <section id="roles">
-      <h2>3. Roles y Funciones Típicas</h2>
-      <article>
-        <h3>Recién Egresados</h3>
+    <section id="areas" class="seccion">
+      <h2>Áreas de Conocimiento Clave</h2>
+      <div class="carrera">
+        <h3>ITS:</h3>
         <ul>
-          <li>Desarrollador de Software</li>
-          <li>Ingeniero de Soporte Técnico</li>
+          <li>Desarrollo Web y Móvil</li>
+          <li>Ciberseguridad</li>
+          <li>Inteligencia Artificial y Machine Learning</li>
+          <li>Bases de Datos y Big Data</li>
+          <li>Ingeniería de Software</li>
+          <li>DevOps y Automatización</li>
         </ul>
-        <h3>Con Experiencia</h3>
+      </div>
+      <div class="carrera">
+        <h3>IAS:</h3>
         <ul>
-          <li>Gerente de Proyectos</li>
-          <li>Especialista en Automatización</li>
+          <li>Control Automático y PLCs</li>
+          <li>Robótica Industrial</li>
+          <li>Sistemas Embebidos</li>
+          <li>Instrumentación y Sensores</li>
+          <li>Electrónica de Potencia</li>
+          <li>SCADA y Sistemas Supervisores</li>
         </ul>
-      </article>
+      </div>
     </section>
 
-    <section id="habilidades">
-      <h2>4. Habilidades y Competencias Clave</h2>
-      <article>
-        <h3>Técnicas</h3>
-        <ul>
-          <li>Programación (Java, .NET, SAP)</li>
-          <li>Manejo de sistemas SCADA y PLC</li>
-        </ul>
-        <h3>Blandas</h3>
-        <ul>
-          <li>Comunicación efectiva</li>
-          <li>Trabajo en equipo</li>
-        </ul>
-      </article>
+    <section id="mercado" class="seccion">
+      <h2>Mercado Laboral Actual</h2>
+      <p><strong>Demanda en Guadalupe, Nuevo León:</strong> Alta demanda en sectores industriales y tecnológicos.</p>
+      <h3>Sectores de Empleo:</h3>
+      <ul>
+        <li>Industria Automotriz y Manufactura</li>
+        <li>Empresas de Desarrollo de Software</li>
+        <li>Integradores de Sistemas de Automatización</li>
+        <li>Consultorías Tecnológicas</li>
+        <li>Startups y Empresas Fintech</li>
+      </ul>
+      <h3>Tipos de Empleadores:</h3>
+      <ul>
+        <li>Grandes Empresas (e.g., Cemex, Ternium, Softtek, Siemens)</li>
+        <li>PyMEs Tecnológicas</li>
+        <li>Gobiernos e Instituciones Educativas</li>
+        <li>ONGs con Enfoque Tecnológico</li>
+        <li>Trabajo Independiente o Remoto</li>
+      </ul>
     </section>
 
-    <section id="consideraciones">
-      <h2>5. Consideraciones Adicionales</h2>
-      <article>
-        <h3>Emprendimiento</h3>
-        <p>Oportunidades en desarrollo de software y consultoría tecnológica.</p>
-        <h3>Certificaciones</h3>
-        <p>Recomendadas: Cisco, Microsoft, Siemens.</p>
-        <h3>Impacto Social</h3>
-        <p>Contribución al desarrollo tecnológico y eficiencia industrial.</p>
-      </article>
+    <section id="salarios" class="seccion">
+      <h2>Salarios y Condiciones Laborales</h2>
+      <div class="carrera">
+        <h3>ITS:</h3>
+        <ul>
+          <li><strong>Practicante (México):</strong> $6,000 – $10,000 MXN/mes</li>
+          <li><strong>Egresado con Experiencia (México):</strong> $20,000 – $35,000 MXN/mes</li>
+          <li><strong>Con Experiencia (EE.UU./Canadá/Europa):</strong> $60,000 – $120,000 MXN/mes equivalente</li>
+        </ul>
+      </div>
+      <div class="carrera">
+        <h3>IAS:</h3>
+        <ul>
+          <li><strong>Practicante (México):</strong> $7,000 – $11,000 MXN/mes</li>
+          <li><strong>Egresado con Experiencia (México):</strong> $22,000 – $38,000 MXN/mes</li>
+          <li><strong>Con Experiencia (EE.UU./Canadá/Europa):</strong> $65,000 – $130,000 MXN/mes equivalente</li>
+        </ul>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>© 2025 FIME - Universidad Autónoma de Nuevo León</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
+<footer>
+  <p>&copy; 2025 Campo Laboral ITS e IAS - FIME. Todos los derechos reservados.</p>
+</footer>
