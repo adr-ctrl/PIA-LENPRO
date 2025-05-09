@@ -77,3 +77,36 @@ footer {
   border-top: 1px solid #333;
   margin-top: 30px;
 }
+.temario-tree {
+  background-color: #1e1e1e;
+  color: #cccccc;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 1.5em;
+}
+
+.temario-tree .dir {
+  color: #4fc1ff; /* azul brillante */
+  font-weight: bold;
+}
+
+.temario-tree .section {
+  color: #c586c0; /* morado */
+  font-weight: bold;
+}
+
+.temario-tree .text {
+  color: #9cdcfe;
+}
+
+.temario-tree .number {
+  color: #b5cea8;
+}
+
+.temario-tree .link {
+  color: #569cd6;
+  text-decoration: underline;
+}
