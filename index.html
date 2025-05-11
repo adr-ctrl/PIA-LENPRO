@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Encabezado principal con navegación -->
   <header>
     <h1>Campo Laboral de ITS e IAS - FIME</h1>
     <nav>
-      <button onclick="mostrarSeccion('inicio')">Indice</button>
+      <button onclick="mostrarSeccion('inicio')">Índice</button>
       <button onclick="mostrarSeccion('planes')">Plan de Estudios</button>
       <button onclick="mostrarSeccion('areas')">Áreas de Conocimiento</button>
       <button onclick="mostrarSeccion('mercado')">Mercado Laboral</button>
@@ -18,7 +19,9 @@
     </nav>
   </header>
 
+  <!-- Contenido principal -->
   <main>
+    <!-- Sección de índice general -->
     <section id="inicio" class="seccion activa">
       <h2>Índice</h2>
       <pre>
@@ -66,27 +69,28 @@
   │       ├── Practicante (MX)
   │       ├── Egresado (MX)
   │       └── Experto (Extranjero)
-      </pre>
-  </section>
-  
-  
 
+      </pre>
+    </section>
+
+    <!-- Plan de estudios para ITS e IAS -->
     <section id="planes" class="seccion">
       <h2>Plan de Estudios</h2>
       <div class="carrera">
         <h3>🖥️ Ingeniería en Tecnologías de Software (ITS)</h3>
         <p><strong>Duración:</strong> 10 semestres</p>
-        <p><strong>Enfoque:</strong> Desarrollo de software, sistemas distribuidos, inteligencia artificial, entre otros.</p>
+        <p><strong>Enfoque:</strong> Desarrollo de software, sistemas distribuidos, inteligencia artificial.</p>
         <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_en_Tecnologia_de_Software.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
       </div>
       <div class="carrera">
         <h3>📊 Ingeniería en Administración y Sistemas (IAS)</h3>
         <p><strong>Duración:</strong> 10 semestres</p>
-        <p><strong>Enfoque:</strong> Administración de proyectos de software, análisis de sistemas, redes computacionales, entre otros.</p>
+        <p><strong>Enfoque:</strong> Administración de proyectos, redes, análisis de sistemas.</p>
         <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_Administrador_de_Sistemas.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
       </div>
     </section>
 
+    <!-- Áreas de conocimiento clave -->
     <section id="areas" class="seccion">
       <h2>Áreas de Conocimiento Clave</h2>
       <div class="carrera">
@@ -113,51 +117,114 @@
       </div>
     </section>
 
+    <!-- Mercado laboral actual -->
     <section id="mercado" class="seccion">
-      <h2>Mercado Laboral Actual</h2>
-      <p><strong>Demanda en Nuevo León:</strong> Alta demanda en sectores industriales y tecnológicos.</p>
-      <h3>Sectores de Empleo:</h3>
+      <h2>📈 Mercado Laboral Actual en Nuevo León</h2>
+      <p><strong>Demanda en Nuevo León:</strong> Alta en sectores industriales y tecnológicos. Muchas oportunidades para egresados de ITS e IAS.</p>
+
+      <h3>🧭 Sectores de Empleo</h3>
       <ul>
-        <li>Industria Automotriz y Manufactura</li>
-        <li>Empresas de Desarrollo de Software</li>
-        <li>Integradores de Sistemas de Automatización</li>
-        <li>Consultorías Tecnológicas</li>
-        <li>Startups y Empresas Fintech</li>
+        <li>Automotriz y Manufactura Avanzada</li>
+        <li>Software y Consultoría IT</li>
+        <li>Automatización y Control</li>
+        <li>Transformación Digital</li>
+        <li>Fintech</li>
+        <li>Telecomunicaciones y Electrónica</li>
+        <li>Gobierno Digital</li>
       </ul>
-      <h3>Tipos de Empleadores:</h3>
+
+      <h3>🏢 Tipos de Empleadores</h3>
       <ul>
-        <li>Grandes Empresas (e.g., Cemex, Ternium, Softtek, Siemens)</li>
-        <li>PyMEs Tecnológicas</li>
-        <li>Gobiernos e Instituciones Educativas</li>
-        <li>ONGs con Enfoque Tecnológico</li>
-        <li>Trabajo Independiente o Remoto</li>
+        <li><strong>Grandes Empresas:</strong> Cemex, Ternium, Softtek, Siemens, etc.</li>
+        <li><strong>PyMEs y Startups:</strong> Codebay, Wizeline, BluePeople, etc.</li>
+        <li><strong>Gobierno y Educación:</strong> UANL, Gobierno NL, Tec de Monterrey</li>
+        <li><strong>ONGs:</strong> Codeando México, Fundación FEMSA</li>
+        <li><strong>Freelance:</strong> Plataformas como Upwork, Freelancer, Toptal</li>
       </ul>
+
+      <h3>💼 Tendencias del Mercado</h3>
+      <ul>
+        <li>Trabajo remoto e híbrido</li>
+        <li>Alta demanda en IA, DevOps, ciberseguridad</li>
+        <li>Certificaciones y especializaciones valoradas</li>
+        <li>Inglés técnico como ventaja</li>
+        <li>Enfoque en habilidades prácticas</li>
+      </ul>
+
+      <h3>🏢 Empresas Reconocidas en Nuevo León</h3>
+      <div class="empresas">
+        <!-- Cada empresa con su logo y descripción -->
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/cemex.com" alt="Cemex" width="120">
+          <p><strong>Cemex:</strong> Materiales de construcción, con sede en Monterrey.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/ternium.com" alt="Ternium" width="120">
+          <p><strong>Ternium:</strong> Productor de acero líder en LATAM.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/softtek.com" alt="Softtek" width="120">
+          <p><strong>Softtek:</strong> Servicios globales de TI.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/siemens.com" alt="Siemens" width="120">
+          <p><strong>Siemens:</strong> Automatización, digitalización y energía.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/heinekenmexico.com" alt="Heineken México" width="120">
+          <p><strong>Heineken México:</strong> Cervecera con sede en Monterrey.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/alfa.com.mx" alt="Alfa" width="120">
+          <p><strong>Alfa:</strong> Conglomerado industrial (alimentos, energía, telecom).</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/femsa.com" alt="FEMSA" width="120">
+          <p><strong>FEMSA:</strong> Comercio, logística y embotellado.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/kia.com" alt="KIA" width="120">
+          <p><strong>KIA:</strong> Planta automotriz en Pesquería, NL.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/johnsoncontrols.com" alt="Johnson Controls" width="120">
+          <p><strong>Johnson Controls:</strong> Automatización y eficiencia energética.</p>
+        </div>
+        <div class="empresa">
+          <img src="https://logo.clearbit.com/xignux.com" alt="Xignux" width="120">
+          <p><strong>Xignux:</strong> Energía y alimentos con presencia en NL.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- Sección de salarios -->
     <section id="salarios" class="seccion">
       <h2>Salarios y Condiciones Laborales</h2>
       <div class="carrera">
         <h3>ITS:</h3>
         <ul>
           <li><strong>Practicante (México):</strong> $6,000 – $10,000 MXN/mes</li>
-          <li><strong>Egresado con Experiencia (México):</strong> $20,000 – $35,000 MXN/mes</li>
-          <li><strong>Con Experiencia (EE.UU./Canadá/Europa):</strong> $60,000 – $120,000 MXN/mes equivalente</li>
+          <li><strong>Egresado con Experiencia:</strong> $20,000 – $35,000 MXN/mes</li>
+          <li><strong>Extranjero:</strong> $60,000 – $120,000 MXN/mes equivalente</li>
         </ul>
       </div>
       <div class="carrera">
         <h3>IAS:</h3>
         <ul>
           <li><strong>Practicante (México):</strong> $7,000 – $11,000 MXN/mes</li>
-          <li><strong>Egresado con Experiencia (México):</strong> $22,000 – $38,000 MXN/mes</li>
-          <li><strong>Con Experiencia (EE.UU./Canadá/Europa):</strong> $65,000 – $130,000 MXN/mes equivalente</li>
+          <li><strong>Egresado con Experiencia:</strong> $22,000 – $38,000 MXN/mes</li>
+          <li><strong>Extranjero:</strong> $65,000 – $130,000 MXN/mes equivalente</li>
         </ul>
       </div>
     </section>
   </main>
 
+  <!-- Footer (corregido: estaba mal posicionado) -->
+  <footer>
+    <p>&copy; 2025 Campo Laboral ITS e IAS - FIME. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script principal -->
   <script src="script.js"></script>
 </body>
 </html>
-<footer>
-  <p>&copy; 2025 Campo Laboral ITS e IAS - FIME. Todos los derechos reservados.</p>
-</footer>
