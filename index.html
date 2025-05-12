@@ -7,217 +7,285 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Encabezado principal con navegación -->
-  <header>
-    <h1>Campo Laboral de ITS e IAS - FIME</h1>
-    <nav>
-      <button onclick="mostrarSeccion('inicio')">Índice</button>
-      <button onclick="mostrarSeccion('planes')">Plan de Estudios</button>
-      <button onclick="mostrarSeccion('areas')">Áreas de Conocimiento</button>
-      <button onclick="mostrarSeccion('mercado')">Mercado Laboral</button>
-      <button onclick="mostrarSeccion('salarios')">Salarios</button>
-    </nav>
-  </header>
+<!-- Encabezado principal con navegación -->
+<header>
+  <h1>Campo Laboral de ITS e IAS - FIME</h1>
+  <nav>
+    <button onclick="mostrarSeccion('planes')">Plan de Estudios</button>
+    <button onclick="mostrarSeccion('areas')">Áreas Profesionales</button>
+    <button onclick="mostrarSeccion('mercado')">Mercado Laboral</button>
+    <button onclick="mostrarSeccion('salarios')">Salarios</button>
+  </nav>
+</header>
 
   <!-- Contenido principal -->
   <main>
-    <!-- Sección de índice general -->
-    <section id="inicio" class="seccion activa">
-      <h2>Índice</h2>
-      <pre>
-  📁 Campo Laboral de ITS e IAS - FIME
-  ├── 1. Índice   
-  ├── 2. Plan de Estudios
-  │   ├── ITS
-  │   │   └── Enfoque: Software, IA, Distribuidos
-  │   └── IAS
-  │       └── Enfoque: Administración, Redes, Sistemas
-  ├── 3. Áreas de Conocimiento
-  │   ├── ITS
-  │   │   ├── Web/Móvil
-  │   │   ├── Ciberseguridad
-  │   │   ├── IA y ML
-  │   │   ├── Bases de Datos
-  │   │   ├── Ing. Software
-  │   │   └── DevOps
-  │   └── IAS
-  │       ├── Control/PLCs
-  │       ├── Robótica
-  │       ├── Embebidos
-  │       ├── Sensores
-  │       ├── Electrónica Potencia
-  │       └── SCADA
-  ├── 4. Mercado Laboral
-  │   ├── Alta Demanda
-  │   ├── Sectores
-  │   │   ├── Automotriz
-  │   │   ├── Software
-  │   │   ├── Automatización
-  │   │   ├── Consultoría
-  │   │   └── Fintech
-  │   └── Empleadores
-  │       ├── Empresas grandes
-  │       ├── PyMEs
-  │       ├── Gobierno
-  │       └── ONGs / Freelance
-  ├── 5. Salarios
-  │   ├── ITS
-  │   │   ├── Practicante (MX)
-  │   │   ├── Egresado (MX)
-  │   │   └── Experto (Extranjero)
-  │   └── IAS
-  │       ├── Practicante (MX)
-  │       ├── Egresado (MX)
-  │       └── Experto (Extranjero)
-
-      </pre>
-    </section>
 
     <!-- Plan de estudios para ITS e IAS -->
     <section id="planes" class="seccion">
       <h2>Plan de Estudios</h2>
       <div class="carrera">
-        <h3>🖥️ Ingeniería en Tecnologías de Software (ITS)</h3>
-        <p><strong>Duración:</strong> 10 semestres</p>
+        <h3>Ingeniería en Tecnologías de Software (ITS)</h3>
+
         <p><strong>Enfoque:</strong> Desarrollo de software, sistemas distribuidos, inteligencia artificial.</p>
         <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_en_Tecnologia_de_Software.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
       </div>
       <div class="carrera">
-        <h3>📊 Ingeniería en Administración y Sistemas (IAS)</h3>
-        <p><strong>Duración:</strong> 10 semestres</p>
+        <h3>Ingeniería en Administración y Sistemas (IAS)</h3>
+
         <p><strong>Enfoque:</strong> Administración de proyectos, redes, análisis de sistemas.</p>
         <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_Administrador_de_Sistemas.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
       </div>
     </section>
 
-    <!-- Áreas de conocimiento clave -->
-    <section id="areas" class="seccion">
-      <h2>Áreas de Conocimiento Clave</h2>
-      <div class="carrera">
-        <h3>ITS:</h3>
-        <ul>
-          <li>Desarrollo Web y Móvil</li>
-          <li>Ciberseguridad</li>
-          <li>Inteligencia Artificial y Machine Learning</li>
-          <li>Bases de Datos y Big Data</li>
-          <li>Ingeniería de Software</li>
-          <li>DevOps y Automatización</li>
-        </ul>
-      </div>
-      <div class="carrera">
-        <h3>IAS:</h3>
-        <ul>
-          <li>Control Automático y PLCs</li>
-          <li>Robótica Industrial</li>
-          <li>Sistemas Embebidos</li>
-          <li>Instrumentación y Sensores</li>
-          <li>Electrónica de Potencia</li>
-          <li>SCADA y Sistemas Supervisores</li>
-        </ul>
-      </div>
-    </section>
+<!-- Áreas de conocimiento clave -->
+<section id="areas" class="seccion">
+  <h2>Áreas Profesionales</h2>
+  <div class="carreras-container"> <!-- Contenedor principal para las dos columnas -->
 
-    <!-- Mercado laboral actual -->
-    <section id="mercado" class="seccion">
-      <h2>📈 Mercado Laboral Actual en Nuevo León</h2>
-      <p><strong>Demanda en Nuevo León:</strong> Alta en sectores industriales y tecnológicos. Muchas oportunidades para egresados de ITS e IAS.</p>
-
-      <h3>🧭 Sectores de Empleo</h3>
+    <!-- Carreras para ITS -->
+    <div class="carrera">
+      <h3>ITS:</h3>
       <ul>
-        <li>Automotriz y Manufactura Avanzada</li>
-        <li>Software y Consultoría IT</li>
-        <li>Automatización y Control</li>
-        <li>Transformación Digital</li>
-        <li>Fintech</li>
-        <li>Telecomunicaciones y Electrónica</li>
-        <li>Gobierno Digital</li>
+        <li>Inteligencia Artificial y Machine Learning</li>
+        <li>Ciberseguridad</li>
+        <li>Desarrollo Web y Móvil</li>
+        <li>Computación en la Nube (Cloud Computing)</li>
+        <li>DevOps y Automatización</li>
+        <li>Bases de Datos y Big Data</li>
+        <li>Testing y Aseguramiento de la Calidad de Software</li>
+        <li>Desarrollo de Videojuegos</li>
+        <li>Arquitecturas de Microservicios y Serverless</li>
+        <li>Internet de las Cosas (IoT)</li>
+        <li>Realidad Aumentada y Realidad Virtual (AR/VR)</li>
+        <li>Ingeniería de Software</li>
+        <li>Interacción Humano-Computadora (UX/UI)</li>
+        <li>Software Empresarial y ERP</li>
+        <li>Procesamiento de Lenguaje Natural (NLP)</li>
+        <li>Ética y Legislación en Tecnologías Digitales</li>
+        <li>Ingeniería del Conocimiento y Sistemas Expertos</li>
+        <li>Redes y Comunicaciones</li>
+        <li>Blockchain y Criptomonedas</li>
+        <li>Sistemas de Información Geográfica (SIG)</li>
+        <li>Sistemas Embebidos</li>
+        <li>Robótica</li>
+        <li>Arquitectura de Sistemas</li>
+        <li>Sistemas Distribuidos</li>
+        <li>Automatización de Pruebas</li>
+        <li>Desarrollo de Aplicaciones Móviles</li>
+        <li>Gestión de Proyectos IT</li>
+        <li>Estrategia Digital</li>
+        <li>Gestión de Infraestructura TI</li>
+        <li>Análisis de Datos</li>
+        <li>Gestión de la Innovación</li>
+        <li>Computación Cuántica</li>
+        <li>Inteligencia de Negocios (BI)</li> <!-- Área adicional -->
       </ul>
+    </div>
 
-      <h3>🏢 Tipos de Empleadores</h3>
+    <!-- Carreras para IAS -->
+    <div class="carrera">
+      <h3>IAS:</h3>
       <ul>
-        <li><strong>Grandes Empresas:</strong> Cemex, Ternium, Softtek, Siemens, etc.</li>
-        <li><strong>PyMEs y Startups:</strong> Codebay, Wizeline, BluePeople, etc.</li>
-        <li><strong>Gobierno y Educación:</strong> UANL, Gobierno NL, Tec de Monterrey</li>
-        <li><strong>ONGs:</strong> Codeando México, Fundación FEMSA</li>
-        <li><strong>Freelance:</strong> Plataformas como Upwork, Freelancer, Toptal</li>
+        <li>Gestión de Proyectos Tecnológicos</li>
+        <li>Transformación Digital Empresarial</li>
+        <li>Inteligencia de Negocios (BI)</li>
+        <li>Automatización de Procesos (RPA)</li>
+        <li>Control Automático y PLCs</li>
+        <li>Robótica Industrial</li>
+        <li>Consultoría en Sistemas de Información</li>
+        <li>Ciberseguridad Organizacional</li>
+        <li>Análisis de Datos para la Toma de Decisiones</li>
+        <li>Logística Digital y Cadena de Suministro Inteligente</li>
+        <li>Auditoría de Sistemas y Gobierno de TI</li>
+        <li>Sistemas Embebidos</li>
+        <li>Instrumentación y Sensores</li>
+        <li>SCADA y Sistemas Supervisores</li>
+        <li>Electrónica de Potencia</li>
+        <li>Innovación y Emprendimiento Tecnológico</li>
+        <li>Economía Digital y Modelos de Negocio</li>
+        <li>Gestión de la Innovación Tecnológica</li>
+        <li>Gestión del Cambio Digital</li>
+        <li>Estrategia Digital</li>
+        <li>Consultoría en Transformación Digital</li>
+        <li>Ciberseguridad Estratégica</li>
+        <li>Big Data para Negocios</li>
+        <li>Análisis Predictivo y Data Mining</li>
+        <li>Gestión de la Cadena de Suministro Digital</li>
+        <li>Automatización Industrial y Smart Manufacturing</li>
+        <li>Gestión de la Infraestructura de TI</li>
+        <li>Gestión de la Experiencia del Cliente (CX)</li>
+        <li>Marketing Digital para Empresas Tecnológicas</li>
+        <li>Gestión de Recursos Digitales</li>
+        <li>Finanzas Digitales y Fintech</li>
+        <li>Sistemas de Información Geográfica (GIS)</li>
+        <li>Estratégias de Monetización Digital</li> <!-- Área adicional -->
       </ul>
+    </div>
 
-      <h3>💼 Tendencias del Mercado</h3>
-      <ul>
-        <li>Trabajo remoto e híbrido</li>
-        <li>Alta demanda en IA, DevOps, ciberseguridad</li>
-        <li>Certificaciones y especializaciones valoradas</li>
-        <li>Inglés técnico como ventaja</li>
-        <li>Enfoque en habilidades prácticas</li>
-      </ul>
+  </div> <!-- Fin del contenedor -->
+</section>
 
-      <h3>🏢 Empresas Reconocidas en Nuevo León</h3>
-      <div class="empresas">
-        <!-- Cada empresa con su logo y descripción -->
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/cemex.com" alt="Cemex" width="120">
-          <p><strong>Cemex:</strong> Materiales de construcción, con sede en Monterrey.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/ternium.com" alt="Ternium" width="120">
-          <p><strong>Ternium:</strong> Productor de acero líder en LATAM.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/softtek.com" alt="Softtek" width="120">
-          <p><strong>Softtek:</strong> Servicios globales de TI.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/siemens.com" alt="Siemens" width="120">
-          <p><strong>Siemens:</strong> Automatización, digitalización y energía.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/heinekenmexico.com" alt="Heineken México" width="120">
-          <p><strong>Heineken México:</strong> Cervecera con sede en Monterrey.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/alfa.com.mx" alt="Alfa" width="120">
-          <p><strong>Alfa:</strong> Conglomerado industrial (alimentos, energía, telecom).</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/femsa.com" alt="FEMSA" width="120">
-          <p><strong>FEMSA:</strong> Comercio, logística y embotellado.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/kia.com" alt="KIA" width="120">
-          <p><strong>KIA:</strong> Planta automotriz en Pesquería, NL.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/johnsoncontrols.com" alt="Johnson Controls" width="120">
-          <p><strong>Johnson Controls:</strong> Automatización y eficiencia energética.</p>
-        </div>
-        <div class="empresa">
-          <img src="https://logo.clearbit.com/xignux.com" alt="Xignux" width="120">
-          <p><strong>Xignux:</strong> Energía y alimentos con presencia en NL.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Sección de salarios -->
-    <section id="salarios" class="seccion">
-      <h2>Salarios y Condiciones Laborales</h2>
-      <div class="carrera">
-        <h3>ITS:</h3>
-        <ul>
-          <li><strong>Practicante (México):</strong> $6,000 – $10,000 MXN/mes</li>
-          <li><strong>Egresado con Experiencia:</strong> $20,000 – $35,000 MXN/mes</li>
-          <li><strong>Extranjero:</strong> $60,000 – $120,000 MXN/mes equivalente</li>
-        </ul>
+
+
+<!-- Mercado laboral actual -->
+<section id="mercado" class="seccion">
+  <h2>Mercado Laboral Actual en Nuevo León</h2>
+  <p><strong>Demanda en Nuevo León:</strong> Alta en sectores industriales y tecnológicos.</p>
+
+  <button class="mercado-btn" onclick="toggleContenido('sectores')">Sectores</button>
+  <div id="sectores" class="mercado-content oculto">
+    <h3>Sectores de Empleo</h3>
+    <ul>
+      <li>Automotriz y Manufactura Avanzada</li>
+      <li>Software y Consultoría IT</li>
+      <li>Automatización y Control</li>
+      <li>Transformación Digital</li>
+      <li>Fintech</li>
+      <li>Telecomunicaciones y Electrónica</li>
+      <li>Gobierno Digital</li>
+    </ul>
+  </div>
+
+  <button class="mercado-btn" onclick="toggleContenido('empleadores')">Empleadores</button>
+  <div id="empleadores" class="mercado-content oculto">
+    <h3>Tipos de Empleadores</h3>
+    <ul>
+      <li><strong>Grandes Empresas:</strong> Cemex, Ternium, Softtek, Siemens, etc.</li>
+      <li><strong>PyMEs y Startups:</strong> Codebay, Wizeline, BluePeople, etc.</li>
+      <li><strong>Gobierno y Educación:</strong> UANL, Gobierno NL, Tec de Monterrey</li>
+      <li><strong>ONGs:</strong> Codeando México, Fundación FEMSA</li>
+      <li><strong>Freelance:</strong> Plataformas como Upwork, Freelancer, Toptal</li>
+    </ul>
+  </div>
+
+  <button class="mercado-btn" onclick="toggleContenido('tendencias')">Tendencias</button>
+  <div id="tendencias" class="mercado-content oculto">
+    <h3>Tendencias del Mercado</h3>
+    <ul>
+      <li>Trabajo remoto e híbrido</li>
+      <li>Alta demanda en IA, DevOps, ciberseguridad</li>
+      <li>Certificaciones y especializaciones valoradas</li>
+      <li>Inglés técnico como ventaja</li>
+    </ul>
+  </div>
+
+  <button class="mercado-btn" onclick="toggleContenido('empresas')">Empresas</button>
+  <div id="empresas" class="mercado-content oculto">
+    <h3>Empresas Reconocidas en Nuevo León</h3>
+    <div class="empresas">
+      <!-- Cada empresa con su logo y descripción -->
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/cemex.com" alt="Cemex" width="120">
+        <p><strong>Cemex:</strong> Materiales de construcción, con sede en Monterrey.</p>
       </div>
-      <div class="carrera">
-        <h3>IAS:</h3>
-        <ul>
-          <li><strong>Practicante (México):</strong> $7,000 – $11,000 MXN/mes</li>
-          <li><strong>Egresado con Experiencia:</strong> $22,000 – $38,000 MXN/mes</li>
-          <li><strong>Extranjero:</strong> $65,000 – $130,000 MXN/mes equivalente</li>
-        </ul>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/ternium.com" alt="Ternium" width="120">
+        <p><strong>Ternium:</strong> Productor de acero líder en LATAM.</p>
       </div>
-    </section>
-  </main>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/softtek.com" alt="Softtek" width="120">
+        <p><strong>Softtek:</strong> Servicios globales de TI.</p>
+      </div>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/siemens.com" alt="Siemens" width="120">
+        <p><strong>Siemens:</strong> Automatización, digitalización y energía.</p>
+      </div>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/heinekenmexico.com" alt="Heineken México" width="120">
+        <p><strong>Heineken México:</strong> Cervecera con sede en Monterrey.</p>
+      </div>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/alfa.com.mx" alt="Alfa" width="120">
+        <p><strong>Alfa:</strong> Conglomerado industrial (alimentos, energía, telecom).</p>
+      </div>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/femsa.com" alt="FEMSA" width="120">
+        <p><strong>FEMSA:</strong> Comercio, logística y embotellado.</p>
+      </div>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/kia.com" alt="KIA" width="120">
+        <p><strong>KIA:</strong> Planta automotriz en Pesquería, NL.</p>
+      </div>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/johnsoncontrols.com" alt="Johnson Controls" width="120">
+        <p><strong>Johnson Controls:</strong> Automatización y eficiencia energética.</p>
+      </div>
+      <div class="empresa">
+        <img src="https://logo.clearbit.com/xignux.com" alt="Xignux" width="120">
+        <p><strong>Xignux:</strong> Energía y alimentos con presencia en NL.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Sección de salarios -->
+<section id="salarios" class="seccion">
+  <h2>Salarios</h2>
+  
+  <!-- Salarios de ITS -->
+  <div class="carrera">
+    <h3>ITS:</h3>
+    <h4>Áreas más demandadas:</h4>
+    <ul>
+      <li><strong>Inteligencia Artificial y Machine Learning:</strong> $50,000 – $90,000 MXN/mes</li>
+      <li><strong>Ciberseguridad:</strong> $40,000 – $75,000 MXN/mes</li>
+      <li><strong>Desarrollo Web y Móvil:</strong> $35,000 – $65,000 MXN/mes</li>
+      <li><strong>DevOps y Automatización:</strong> $35,000 – $60,000 MXN/mes</li>
+      <li><strong>Computación en la Nube (Cloud Computing):</strong> $35,000 – $60,000 MXN/mes</li>
+      <li><strong>Big Data y Bases de Datos:</strong> $30,000 – $55,000 MXN/mes</li>
+      <li><strong>Ingeniería de Software:</strong> $30,000 – $50,000 MXN/mes</li>
+      <li><strong>Desarrollo de Videojuegos:</strong> $25,000 – $50,000 MXN/mes</li>
+      <li><strong>Arquitecturas de Microservicios y Serverless:</strong> $30,000 – $50,000 MXN/mes</li>
+      <li><strong>Realidad Aumentada y Realidad Virtual (AR/VR):</strong> $25,000 – $45,000 MXN/mes</li>
+      <li><strong>Interacción Humano-Computadora (UX/UI):</strong> $25,000 – $40,000 MXN/mes</li>
+      <li><strong>Internet de las Cosas (IoT):</strong> $20,000 – $40,000 MXN/mes</li>
+      <li><strong>Procesamiento de Lenguaje Natural (NLP):</strong> $20,000 – $40,000 MXN/mes</li>
+      <li><strong>Software Empresarial y ERP:</strong> $20,000 – $35,000 MXN/mes</li>
+      <li><strong>Ética y Legislación en Tecnologías Digitales:</strong> $18,000 – $30,000 MXN/mes</li>
+      <li><strong>Ingeniería del Conocimiento y Sistemas Expertos:</strong> $18,000 – $28,000 MXN/mes</li>
+    </ul>
+    <h4>Salarios Generales:</h4>
+    <ul>
+      <li><strong>Practicante (México):</strong> $6,000 – $10,000 MXN/mes</li>
+      <li><strong>Egresado con Experiencia:</strong> $20,000 – $35,000 MXN/mes</li>
+      <li><strong>Extranjero:</strong> $60,000 – $120,000 MXN/mes equivalente</li>
+    </ul>
+  </div>
+
+  <!-- Salarios de IAS -->
+  <div class="carrera">
+    <h3>IAS:</h3>
+    <h4>Áreas más demandadas:</h4>
+    <ul>
+      <li><strong>Inteligencia de Negocios (BI):</strong> $40,000 – $75,000 MXN/mes</li>
+      <li><strong>Automatización de Procesos (RPA):</strong> $35,000 – $60,000 MXN/mes</li>
+      <li><strong>Gestión de Proyectos Tecnológicos:</strong> $30,000 – $55,000 MXN/mes</li>
+      <li><strong>Transformación Digital Empresarial:</strong> $30,000 – $55,000 MXN/mes</li>
+      <li><strong>Ciberseguridad Organizacional:</strong> $30,000 – $50,000 MXN/mes</li>
+      <li><strong>Consultoría en Sistemas de Información:</strong> $25,000 – $50,000 MXN/mes</li>
+      <li><strong>Robótica Industrial:</strong> $25,000 – $45,000 MXN/mes</li>
+      <li><strong>Control Automático y PLCs:</strong> $25,000 – $45,000 MXN/mes</li>
+      <li><strong>Análisis de Datos para la Toma de Decisiones:</strong> $20,000 – $40,000 MXN/mes</li>
+      <li><strong>Logística Digital y Cadena de Suministro Inteligente:</strong> $20,000 – $35,000 MXN/mes</li>
+      <li><strong>Auditoría de Sistemas y Gobierno de TI:</strong> $20,000 – $35,000 MXN/mes</li>
+      <li><strong>Electrónica de Potencia:</strong> $20,000 – $30,000 MXN/mes</li>
+      <li><strong>Sistemas Embebidos:</strong> $20,000 – $30,000 MXN/mes</li>
+      <li><strong>SCADA y Sistemas Supervisores:</strong> $15,000 – $30,000 MXN/mes</li>
+      <li><strong>Innovación y Emprendimiento Tecnológico:</strong> $15,000 – $28,000 MXN/mes</li>
+      <li><strong>Economía Digital y Modelos de Negocio:</strong> $15,000 – $25,000 MXN/mes</li>
+    </ul>
+    <h4>Salarios Generales:</h4>
+    <ul>
+      <li><strong>Practicante (México):</strong> $7,000 – $11,000 MXN/mes</li>
+      <li><strong>Egresado con Experiencia:</strong> $22,000 – $38,000 MXN/mes</li>
+      <li><strong>Extranjero:</strong> $65,000 – $130,000 MXN/mes equivalente</li>
+    </ul>
+  </div>
+
+</section>
+
 
   <!-- Footer (corregido: estaba mal posicionado) -->
   <footer>

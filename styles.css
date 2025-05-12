@@ -154,3 +154,36 @@ footer {
   max-width: 100px;
   margin-bottom: 10px;
 }
+
+.carreras-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Esto permite que se ajusten en pantallas pequeñas */
+}
+
+.carrera {
+  flex: 1;
+  min-width: 300px; /* Para que cada columna tenga un tamaño mínimo */
+}
+
+.carrera h3 {
+  margin-bottom: 10px;
+  color: #f1f1f1; /* Color de texto */
+}
+
+.carrera ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #dcdcdc; /* Color de los elementos en las listas */
+}
+.mercado-content {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.oculto {
+  display: none;
+}
