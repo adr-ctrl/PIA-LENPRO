@@ -24,19 +24,28 @@
     <!-- Plan de estudios para ITS e IAS -->
     <section id="planes" class="seccion">
       <h2>Plan de Estudios</h2>
-      <div class="carrera">
+    
+      <article class="carrera plan-estudios">
         <h3>Ingeniería en Tecnologías de Software (ITS)</h3>
-
-        <p><strong>Enfoque:</strong> Desarrollo de software, sistemas distribuidos, inteligencia artificial.</p>
-        <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_en_Tecnologia_de_Software.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
-      </div>
-      <div class="carrera">
+        <p><span class="etiqueta">Enfoque:</span> Desarrollo de software, sistemas distribuidos, inteligencia artificial.</p>
+        <p>
+          <a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_en_Tecnologia_de_Software.pdf"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Ver plan de estudios de ITS en PDF">Ver Plan de Estudios (PDF)</a>
+        </p>
+      </article>
+    
+      <article class="carrera plan-estudios">
         <h3>Ingeniería en Administración y Sistemas (IAS)</h3>
-
-        <p><strong>Enfoque:</strong> Administración de proyectos, redes, análisis de sistemas.</p>
-        <p><a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_Administrador_de_Sistemas.pdf" target="_blank">Ver Plan de Estudios (PDF)</a></p>
-      </div>
+        <p><span class="etiqueta">Enfoque:</span> Administración de proyectos, redes, análisis de sistemas.</p>
+        <p>
+          <a href="https://www.uanl.mx/wp-content/uploads/2018/08/Plan-anterior_401_Lic_Ingeniero_Administrador_de_Sistemas.pdf"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Ver plan de estudios de IAS en PDF">Ver Plan de Estudios (PDF)</a>
+        </p>
+      </article>
     </section>
+    
 
 <!-- Áreas de conocimiento clave -->
 <section id="areas" class="seccion">
@@ -134,7 +143,14 @@
   <h2>Mercado Laboral Actual en Nuevo León</h2>
   <p><strong>Demanda en Nuevo León:</strong> Alta en sectores industriales y tecnológicos.</p>
 
-  <button class="mercado-btn" onclick="toggleContenido('sectores')">Sectores</button>
+  <div class="botones-mercado">
+    <button class="mercado-btn" onclick="toggleContenido('sectores')">Sectores</button>
+    <button class="mercado-btn" onclick="toggleContenido('empleadores')">Empleadores</button>
+    <button class="mercado-btn" onclick="toggleContenido('tendencias')">Tendencias</button>
+    <button class="mercado-btn" onclick="toggleContenido('empresas')">Empresas</button>
+</div>
+
+
   <div id="sectores" class="mercado-content oculto">
     <h3>Sectores de Empleo</h3>
     <ul>
@@ -148,7 +164,7 @@
     </ul>
   </div>
 
-  <button class="mercado-btn" onclick="toggleContenido('empleadores')">Empleadores</button>
+ 
   <div id="empleadores" class="mercado-content oculto">
     <h3>Tipos de Empleadores</h3>
     <ul>
@@ -160,7 +176,7 @@
     </ul>
   </div>
 
-  <button class="mercado-btn" onclick="toggleContenido('tendencias')">Tendencias</button>
+
   <div id="tendencias" class="mercado-content oculto">
     <h3>Tendencias del Mercado</h3>
     <ul>
@@ -171,7 +187,7 @@
     </ul>
   </div>
 
-  <button class="mercado-btn" onclick="toggleContenido('empresas')">Empresas</button>
+
   <div id="empresas" class="mercado-content oculto">
     <h3>Empresas Reconocidas en Nuevo León</h3>
     <div class="empresas">
@@ -223,67 +239,65 @@
 <!-- Sección de salarios -->
 <section id="salarios" class="seccion">
   <h2>Salarios</h2>
-  
-  <!-- Salarios de ITS -->
-  <div class="carrera">
-    <h3>ITS:</h3>
-    <h4>Áreas más demandadas:</h4>
-    <ul>
-      <li><strong>Inteligencia Artificial y Machine Learning:</strong> $50,000 – $90,000 MXN/mes</li>
-      <li><strong>Ciberseguridad:</strong> $40,000 – $75,000 MXN/mes</li>
-      <li><strong>Desarrollo Web y Móvil:</strong> $35,000 – $65,000 MXN/mes</li>
-      <li><strong>DevOps y Automatización:</strong> $35,000 – $60,000 MXN/mes</li>
-      <li><strong>Computación en la Nube (Cloud Computing):</strong> $35,000 – $60,000 MXN/mes</li>
-      <li><strong>Big Data y Bases de Datos:</strong> $30,000 – $55,000 MXN/mes</li>
-      <li><strong>Ingeniería de Software:</strong> $30,000 – $50,000 MXN/mes</li>
-      <li><strong>Desarrollo de Videojuegos:</strong> $25,000 – $50,000 MXN/mes</li>
-      <li><strong>Arquitecturas de Microservicios y Serverless:</strong> $30,000 – $50,000 MXN/mes</li>
-      <li><strong>Realidad Aumentada y Realidad Virtual (AR/VR):</strong> $25,000 – $45,000 MXN/mes</li>
-      <li><strong>Interacción Humano-Computadora (UX/UI):</strong> $25,000 – $40,000 MXN/mes</li>
-      <li><strong>Internet de las Cosas (IoT):</strong> $20,000 – $40,000 MXN/mes</li>
-      <li><strong>Procesamiento de Lenguaje Natural (NLP):</strong> $20,000 – $40,000 MXN/mes</li>
-      <li><strong>Software Empresarial y ERP:</strong> $20,000 – $35,000 MXN/mes</li>
-      <li><strong>Ética y Legislación en Tecnologías Digitales:</strong> $18,000 – $30,000 MXN/mes</li>
-      <li><strong>Ingeniería del Conocimiento y Sistemas Expertos:</strong> $18,000 – $28,000 MXN/mes</li>
-    </ul>
-    <h4>Salarios Generales:</h4>
-    <ul>
-      <li><strong>Practicante (México):</strong> $6,000 – $10,000 MXN/mes</li>
-      <li><strong>Egresado con Experiencia:</strong> $20,000 – $35,000 MXN/mes</li>
-      <li><strong>Extranjero:</strong> $60,000 – $120,000 MXN/mes equivalente</li>
-    </ul>
-  </div>
+  <div class="carreras-container">
+    <div class="carrera">
+      <h3>ITS:</h3>
+      <h4>Áreas más demandadas:</h4>
+      <ul>
+        <li><strong>Inteligencia Artificial y Machine Learning:</strong> $50,000 – $90,000 MXN/mes</li>
+        <li><strong>Ciberseguridad:</strong> $40,000 – $75,000 MXN/mes</li>
+        <li><strong>Desarrollo Web y Móvil:</strong> $35,000 – $65,000 MXN/mes</li>
+        <li><strong>DevOps y Automatización:</strong> $35,000 – $60,000 MXN/mes</li>
+        <li><strong>Computación en la Nube (Cloud Computing):</strong> $35,000 – $60,000 MXN/mes</li>
+        <li><strong>Big Data y Bases de Datos:</strong> $30,000 – $55,000 MXN/mes</li>
+        <li><strong>Ingeniería de Software:</strong> $30,000 – $50,000 MXN/mes</li>
+        <li><strong>Desarrollo de Videojuegos:</strong> $25,000 – $50,000 MXN/mes</li>
+        <li><strong>Arquitecturas de Microservicios y Serverless:</strong> $30,000 – $50,000 MXN/mes</li>
+        <li><strong>Realidad Aumentada y Realidad Virtual (AR/VR):</strong> $25,000 – $45,000 MXN/mes</li>
+        <li><strong>Interacción Humano-Computadora (UX/UI):</strong> $25,000 – $40,000 MXN/mes</li>
+        <li><strong>Internet de las Cosas (IoT):</strong> $20,000 – $40,000 MXN/mes</li>
+        <li><strong>Procesamiento de Lenguaje Natural (NLP):</strong> $20,000 – $40,000 MXN/mes</li>
+        <li><strong>Software Empresarial y ERP:</strong> $20,000 – $35,000 MXN/mes</li>
+        <li><strong>Ética y Legislación en Tecnologías Digitales:</strong> $18,000 – $30,000 MXN/mes</li>
+        <li><strong>Ingeniería del Conocimiento y Sistemas Expertos:</strong> $18,000 – $28,000 MXN/mes</li>
+      </ul>
+      <h4>Salarios Generales:</h4>
+      <ul>
+        <li><strong>Practicante (México):</strong> $6,000 – $10,000 MXN/mes</li>
+        <li><strong>Egresado con Experiencia:</strong> $20,000 – $35,000 MXN/mes</li>
+        <li><strong>Extranjero:</strong> $60,000 – $120,000 MXN/mes equivalente</li>
+      </ul>
+    </div>
 
-  <!-- Salarios de IAS -->
-  <div class="carrera">
-    <h3>IAS:</h3>
-    <h4>Áreas más demandadas:</h4>
-    <ul>
-      <li><strong>Inteligencia de Negocios (BI):</strong> $40,000 – $75,000 MXN/mes</li>
-      <li><strong>Automatización de Procesos (RPA):</strong> $35,000 – $60,000 MXN/mes</li>
-      <li><strong>Gestión de Proyectos Tecnológicos:</strong> $30,000 – $55,000 MXN/mes</li>
-      <li><strong>Transformación Digital Empresarial:</strong> $30,000 – $55,000 MXN/mes</li>
-      <li><strong>Ciberseguridad Organizacional:</strong> $30,000 – $50,000 MXN/mes</li>
-      <li><strong>Consultoría en Sistemas de Información:</strong> $25,000 – $50,000 MXN/mes</li>
-      <li><strong>Robótica Industrial:</strong> $25,000 – $45,000 MXN/mes</li>
-      <li><strong>Control Automático y PLCs:</strong> $25,000 – $45,000 MXN/mes</li>
-      <li><strong>Análisis de Datos para la Toma de Decisiones:</strong> $20,000 – $40,000 MXN/mes</li>
-      <li><strong>Logística Digital y Cadena de Suministro Inteligente:</strong> $20,000 – $35,000 MXN/mes</li>
-      <li><strong>Auditoría de Sistemas y Gobierno de TI:</strong> $20,000 – $35,000 MXN/mes</li>
-      <li><strong>Electrónica de Potencia:</strong> $20,000 – $30,000 MXN/mes</li>
-      <li><strong>Sistemas Embebidos:</strong> $20,000 – $30,000 MXN/mes</li>
-      <li><strong>SCADA y Sistemas Supervisores:</strong> $15,000 – $30,000 MXN/mes</li>
-      <li><strong>Innovación y Emprendimiento Tecnológico:</strong> $15,000 – $28,000 MXN/mes</li>
-      <li><strong>Economía Digital y Modelos de Negocio:</strong> $15,000 – $25,000 MXN/mes</li>
-    </ul>
-    <h4>Salarios Generales:</h4>
-    <ul>
-      <li><strong>Practicante (México):</strong> $7,000 – $11,000 MXN/mes</li>
-      <li><strong>Egresado con Experiencia:</strong> $22,000 – $38,000 MXN/mes</li>
-      <li><strong>Extranjero:</strong> $65,000 – $130,000 MXN/mes equivalente</li>
-    </ul>
+    <div class="carrera">
+      <h3>IAS:</h3>
+      <h4>Áreas más demandadas:</h4>
+      <ul>
+        <li><strong>Inteligencia de Negocios (BI):</strong> $40,000 – $75,000 MXN/mes</li>
+        <li><strong>Automatización de Procesos (RPA):</strong> $35,000 – $60,000 MXN/mes</li>
+        <li><strong>Gestión de Proyectos Tecnológicos:</strong> $30,000 – $55,000 MXN/mes</li>
+        <li><strong>Transformación Digital Empresarial:</strong> $30,000 – $55,000 MXN/mes</li>
+        <li><strong>Ciberseguridad Organizacional:</strong> $30,000 – $50,000 MXN/mes</li>
+        <li><strong>Consultoría en Sistemas de Información:</strong> $25,000 – $50,000 MXN/mes</li>
+        <li><strong>Robótica Industrial:</strong> $25,000 – $45,000 MXN/mes</li>
+        <li><strong>Control Automático y PLCs:</strong> $25,000 – $45,000 MXN/mes</li>
+        <li><strong>Análisis de Datos para la Toma de Decisiones:</strong> $20,000 – $40,000 MXN/mes</li>
+        <li><strong>Logística y Cadena de Suministro Inteligente:</strong> $20,000 – $35,000 MXN/mes</li>
+        <li><strong>Auditoría de Sistemas y Gobierno de TI:</strong> $20,000 – $35,000 MXN/mes</li>
+        <li><strong>Electrónica de Potencia:</strong> $20,000 – $30,000 MXN/mes</li>
+        <li><strong>Sistemas Embebidos:</strong> $20,000 – $30,000 MXN/mes</li>
+        <li><strong>SCADA y Sistemas Supervisores:</strong> $15,000 – $30,000 MXN/mes</li>
+        <li><strong>Innovación y Emprendimiento Tecnológico:</strong> $15,000 – $28,000 MXN/mes</li>
+        <li><strong>Economía Digital y Modelos de Negocio:</strong> $15,000 – $25,000 MXN/mes</li>
+      </ul>
+      <h4>Salarios Generales:</h4>
+      <ul>
+        <li><strong>Practicante (México):</strong> $7,000 – $11,000 MXN/mes</li>
+        <li><strong>Egresado con Experiencia:</strong> $22,000 – $38,000 MXN/mes</li>
+        <li><strong>Extranjero:</strong> $65,000 – $130,000 MXN/mes equivalente</li>
+      </ul>
+    </div>
   </div>
-
 </section>
 
 
