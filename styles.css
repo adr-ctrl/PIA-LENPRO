@@ -136,3 +136,29 @@ main {
 .oculto {
   display: none;
 }
+
+/* ---------------- */
+/* Botones secundarios */
+/* ---------------- */
+
+.mercado-btn {
+  background-color: #475569;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.mercado-btn:hover {
+  background-color: #274aaf; /* Slightly lighter on hover */
+}
+
+.mercado-btn.active {
+  background-color: #274aaf;
+  color: white;
+}
+

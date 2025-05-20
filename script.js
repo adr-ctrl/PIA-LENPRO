@@ -24,7 +24,17 @@ function mostrarSeccion(id) {
  */
 function toggleContenido(id) {
   const contenido = document.getElementById(id);
-  if (contenido) {
-    contenido.classList.toggle('oculto');
+  const boton = document.querySelector(`.mercado-btn[onclick*="${id}"]`);
+
+  if (!contenido || !boton) return;
+
+  // Alternar visibilidad individual
+  if (contenido.classList.contains('oculto')) {
+    contenido.classList.remove('oculto');
+    boton.classList.add('active');
+  } else {
+    contenido.classList.add('oculto');
+    boton.classList.remove('active');
   }
 }
+
