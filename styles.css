@@ -1,6 +1,6 @@
-/* ------------------------------ */
-/* Estilo general en modo oscuro */
-/* ------------------------------ */
+/* ------------------------------- */
+/* Estilo principal en modo oscuro */
+/* ------------------------------- */
 body {
   background: #121212;
   color: #f1f1f1;
@@ -9,9 +9,9 @@ body {
   padding: 0;
 }
 
-/* ------------------- */
-/* Encabezado y menú   */
-/* ------------------- */
+/* ------------------------------ */
+/* Botones Principales y Footer   */
+/* ------------------------------ */
 header, footer {
   background: #1f1f1f;
   text-align: center;
@@ -50,7 +50,8 @@ nav button:hover { background: #2563eb; }
 nav button:active { background: #1d4ed8; }
 
 /* ---------------------- */
-/* Contenido principal    */
+/* Contenido principal, 
+   divisor de secciones   */
 /* ---------------------- */
 main {
   padding: 20px;
@@ -65,9 +66,9 @@ main {
   display: block;
 }
 
-/* -------------------------- */
-/* Secciones de carreras      */
-/* -------------------------- */
+/* ------------------------------------- */
+/* Divisor horizontal de ITS e IAS       */
+/* ------------------------------------- */
 .carreras-container {
   display: flex;
   gap: 40px;
@@ -93,7 +94,7 @@ main {
 }
 
 /* ------------------------------- */
-/* Galería de logos de empresas   */
+/* Galería de logos de empresas    */
 /* ------------------------------- */
 .empresas {
   display: flex;
@@ -112,17 +113,17 @@ main {
   margin-bottom: 10px;
 }
 
-/* --------------------- */
-/* Animación fade-in     */
-/* --------------------- */
+/* -------------------- */
+/* Animación fade-in    */
+/* -------------------- */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* ------------------ */
-/* Bloques informativos */
-/* ------------------ */
+/* ----------------------------- */
+/* Margen de Botones secundarios */
+/* ----------------------------- */
 .mercado-content {
   margin: 10px 0;
   padding: 10px;
@@ -130,16 +131,17 @@ main {
   border-radius: 8px;
 }
 
-/* ---------------- */
-/* Clases utilitarias */
-/* ---------------- */
+/* --------------------------------------------------- */
+/* Clase para ocultar contenido de Botones secundarios,
+   en relación con JS                                  */
+/* --------------------------------------------------- */
 .oculto {
   display: none;
 }
 
-/* ---------------- */
+/* ------------------- */
 /* Botones secundarios */
-/* ---------------- */
+/* ------------------- */
 
 .mercado-btn {
   background-color: #475569;
@@ -154,7 +156,7 @@ main {
 }
 
 .mercado-btn:hover {
-  background-color: #274aaf; /* Slightly lighter on hover */
+  background-color: #274aaf; 
 }
 
 .mercado-btn.active {
