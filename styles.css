@@ -1,6 +1,7 @@
 /* ------------------------------- */
-/* Estilo principal en modo oscuro */
+/* Estilo en modo oscuro y base    */
 /* ------------------------------- */
+
 body {
   background: #121212;
   color: #f1f1f1;
@@ -9,9 +10,10 @@ body {
   padding: 0;
 }
 
-/* ------------------------------ */
-/* Botones Principales y Footer   */
-/* ------------------------------ */
+/* -------------------------------------- */
+/* Botones Principales y Footer (layout)  */
+/* -------------------------------------- */
+
 header, footer {
   background: #1f1f1f;
   text-align: center;
@@ -46,13 +48,18 @@ nav button {
   transition: background 0.3s;
 }
 
-nav button:hover { background: #2563eb; }
-nav button:active { background: #1d4ed8; }
+nav button:hover {
+  background: #2563eb;
+}
+
+nav button:active {
+  background: #1d4ed8;
+}
 
 /* ---------------------- */
-/* Contenido principal, 
-   divisor de secciones   */
+/* Divisor de secciones   */
 /* ---------------------- */
+
 main {
   padding: 20px;
 }
@@ -69,6 +76,7 @@ main {
 /* ------------------------------------- */
 /* Divisor horizontal de ITS e IAS       */
 /* ------------------------------------- */
+
 .carreras-container {
   display: flex;
   gap: 40px;
@@ -96,6 +104,7 @@ main {
 /* ------------------------------- */
 /* Galería de logos de empresas    */
 /* ------------------------------- */
+
 .empresas {
   display: flex;
   flex-wrap: wrap;
@@ -113,30 +122,15 @@ main {
   margin-bottom: 10px;
 }
 
-/* -------------------- */
-/* Animación fade-in    */
-/* -------------------- */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 /* ----------------------------- */
 /* Margen de Botones secundarios */
 /* ----------------------------- */
+
 .mercado-content {
   margin: 10px 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-}
-
-/* --------------------------------------------------- */
-/* Clase para ocultar contenido de Botones secundarios,
-   en relación con JS                                  */
-/* --------------------------------------------------- */
-.oculto {
-  display: none;
 }
 
 /* ------------------- */
@@ -156,7 +150,7 @@ main {
 }
 
 .mercado-btn:hover {
-  background-color: #274aaf; 
+  background-color: #274aaf;
 }
 
 .mercado-btn.active {
@@ -164,3 +158,20 @@ main {
   color: white;
 }
 
+/* --------------------------------------------------- */
+/* Clase para ocultar contenido de Botones secundarios,
+   en relación con JS                                  */
+/* --------------------------------------------------- */
+
+.oculto {
+  display: none;
+}
+
+/* -------------------- */
+/* Animación fade-in    */
+/* -------------------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
